@@ -9,3 +9,10 @@ Die Digitalisierung schreitet voran und somit auch digitale Dinge wie das Coden 
 
 **Wer verwaltet das Projekt und trägt dazu bei?**
 Ich bin der einzige, der dieses Projekt verwaltet. Bei Anmerkungen und Co.: E-Mail-Adresse, siehe Profil
+
+**Wie wird es veröffentlicht?**
+Der ganze Inhalt wird auf dieser Website zugänglich sein, aber es wird nicht alles auf einmal veröffentlicht:
+1. Veröffentlichung (Herbst 2025): Grundlegende Webseitenstruktur mit Startseite / Block 4 (Anhang)
+2. Veröffentlichung (Winter 2025): Block 1 (LaTeX etc.)
+3. Veröffentlichung (Frühjahr 2026): Block 2, 1. Hälfte (HTML etc.)
+4. Veröffentlichung (_tba_): Block 2, 2. Hälfte + Block 3
