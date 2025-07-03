@@ -31,4 +31,4 @@ Digital platform for learning or looking up coding-related things (LaTeX, HTML, 
 1. Publication (autumn 2025): Basic website structure with start page / block 4 (appendix)
 2. Publication (winter 2025): Block 1 (LaTeX etc.)
 3. Publication (spring 2026): Block 2, 1st half (HTML etc.)
-4. Publication (tba): Block 2, 2nd half + Block 3
+4. Publication (_tba_): Block 2, 2nd half + Block 3
