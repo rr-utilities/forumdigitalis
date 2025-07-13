@@ -12,8 +12,8 @@ Ich bin der einzige, der dieses Projekt verwaltet. Bei Anmerkungen und Co.: E-Ma
 
 **Wie wird es veröffentlicht?**
 Der ganze Inhalt wird auf dieser Website zugänglich sein, aber es wird nicht alles auf einmal veröffentlicht:
-1. Veröffentlichung (Herbst 2025): Grundlegende Webseitenstruktur mit Startseite / Block 4 (Anhang)
-2. Veröffentlichung (Winter 2025): Block 1 (LaTeX etc.)
+1. Veröffentlichung (1. November 2025): Grundlegende Webseitenstruktur mit Startseite / Block 4 (Anhang)
+2. Veröffentlichung (Januar 2026): Block 1 (LaTeX etc.)
 3. Veröffentlichung (Frühjahr 2026): Block 2, 1. Hälfte (HTML etc.)
 4. Veröffentlichung (_tba_): Block 2, 2. Hälfte + Block 3
 
@@ -28,7 +28,7 @@ Digital platform for learning or looking up coding-related things (LaTeX, HTML, 
 **Who manages the project and contributes to it?** I am the only one who manages this project. For comments and co.: e-mail address, see profile
 
 **How will it be published?** All content will be accessible on this website, but it will not be published all at once:
-1. Publication (autumn 2025): Basic website structure with start page / block 4 (appendix)
-2. Publication (winter 2025): Block 1 (LaTeX etc.)
+1. Publication (1st November 2025): Basic website structure with start page / block 4 (appendix)
+2. Publication (January 2026): Block 1 (LaTeX etc.)
 3. Publication (spring 2026): Block 2, 1st half (HTML etc.)
 4. Publication (_tba_): Block 2, 2nd half + Block 3
