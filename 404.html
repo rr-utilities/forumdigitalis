@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>404 Error</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f8f8f8;
+        padding-top: 130px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: #003366;
+    }
+    .header {
+        background: #003366;
+        color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 1rem;
+    }
+
+    .header-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .footer {
+        background: #003366;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        padding: 7px;
+    }
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    main h1 {
+        font-size: 6rem;
+        margin: 0;
+        font-weight: 900;
+        user-select: none;
+    }
+    main p {
+        font-size: 1.25rem;
+        margin: 0.5rem 0 2rem 0;
+    }
+    a.styled-link {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.75rem 1.5rem;
+        border-radius: 6px;
+        transition: background 0.3s ease;
+    }
+    a.styled-link:hover {
+        background: #0055aa;
+    }
+
+    .footer {
+        background: #003366;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        padding: 7px;
+    }
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-flex">
+        <div class="site-header">
+        <h1>Forum Digitalis</h1>
+        </div>
+    </div>
+</header>
+
+<main>
+    <h1>404</h1>
+    <p>Die gesuchte Seite wurde leider nicht gefunden.</p>
+    <p>The page you are looking for was not found.</p>
+    <a href="index.html" class="styled-link">Zurück / Home</a>
+</main>
+
+<footer class="footer">
+    &copy; 2025 Coding Utilities
+</footer>
+
+</body>
+</html>
