@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b1/latex_13.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.3 Textgestaltung
+</h1>
+
+<div id="zsumbruch" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Zeilen- und Seitenumbrüche</strong></h3>
+    <h3>
+        Zeilenumbrüche mit Einzug werden mit zweimal drücken der Enter-Taste gemacht. Wenn jedoch ein neuer unabhängiger Abschnitt erstellt werden soll, braucht es einen Doppel-Backslash und zwei Doppel-Backslashes, damit der Abstand sich vergrössert.
+        <br>
+        Bei Seitenumbrüchen gibt es zwei Optionen: <code>\newpage</code> (neue Seite wird angefügt) und <code>\pagebreak</code> (neue Seite wird angefügt und der Inhalt der vorherigen Seite wird bis zum Umbruch gestreckt).
+        <br>
+        Neben diesen Befehlen gibt es noch den Befehl, der Einzüge verhindert (<code>\noindent</code>) oder vertikale (v) bzw. horizontale (h) Abstände um bspw. 3cm vergrössert (<code>\vspace{3cm}</code> bzw. <code>\hspace{3cm}</code>).
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet feugiat neque. Donec tincidunt nunc vitae arcu bibendum, at faucibus nibh elementum. Sed vel lorem ut erat rhoncus tempus in a sem. <strong>% Hier folgt ein Zeilenumbruch mit Einzug.</strong>
+
+
+Curabitur pulvinar, nulla nec finibus tempus, elit tortor consequat nulla, non fermentum enim ipsum sed erat. Fusce id tincidunt nulla. In hac habitasse platea dictumst. Donec maximus lorem ac risus luctus, non consequat eros feugiat. \\ <strong>% Hier folgt ein neuer Abschnitt.</strong>
+
+Proin dapibus metus et felis varius, quis porta neque varius. Suspendisse ut arcu vel mauris bibendum interdum. \\ \\ <strong>% Hier folgt ein neuer Abschnitt mit einem grösseren Abstand.</strong>
+
+Ut lacinia ligula sit amet leo tincidunt, ut varius lacus dictum. Aliquam erat volutpat. Mauris vitae magna id neque aliquam elementum. Sed nec lacus magna. Phasellus cursus magna in justo interdum, sed congue justo feugiat. Vivamus nec odio vitae ipsum sodales faucibus nec vel nunc.
+\newpage <strong>% Hier folgt eine neue Seite.</strong>
+
+Nulla facilisi. Sed convallis ipsum nec quam porttitor, a tempor ex viverra. Etiam gravida, justo id gravida vulputate, enim mauris blandit purus, id bibendum purus ipsum a nibh.
+
+%\vfill %=> Hier könnte man diesen Befehl einfügen, sodass durch \pagebreak nicht mehr die Zeilen- sondern Abschnittsabstände verzerrt werden.
+
+<strong>% Hier folgt kein Einzug.</strong>
+\noindent Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam commodo eu justo vitae mattis. Integer in dolor nec eros placerat fermentum.
+\vspace{3cm} <strong>% Hier folgt eine 3cm tiefe Lücke...</strong>
+Ut quis velit eget justo aliquam tempor. Vivamus a leo vel justo ultricies porta. Suspendisse euismod, erat non elementum vehicula, elit elit blandit \hspace{3cm} <strong>%...und hier eine 3cm lange Lücke.</strong>
+lorem, ac egestas justo sapien non turpis.
+
+\pagebreak <strong>% Hier folgt eine neue Seite, aber der Inhalt oben wird gestreckt.</strong>
+
+Neue Seite</code>
+    <button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="ausrichtung" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Ausrichtung</strong></h3>
+    <h3>
+        Texte in LaTeX sind per Default linksbündig und in Blocksatz, wenn man dies ändern möchte braucht man folgende Befehle:
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode2">\begin{center} <strong>% Zentriert</strong>
+	Curabitur pharetra feugiat odio, vitae euismod velit accumsan sit amet. Quisque congue, augue non iaculis tempus, turpis mauris convallis turpis, et viverra sapien sem at lorem. Morbi vitae nisl vel nunc vehicula sagittis. Vestibulum quis eros eget mi ultrices sodales sed id ante.
+\end{center}
+
+\begin{flushright} <strong>% Rechtsbündig</strong>
+	Ut vitae augue ligula. Vivamus fringilla turpis id justo hendrerit, sed ultricies erat volutpat. Duis porta tellus ac justo feugiat porttitor. Sed in malesuada turpis. Donec ac ultrices velit, nec suscipit turpis. Sed sed ex quis velit tempor venenatis.
+\end{flushright}</code>
+    <button onclick="copyCode2()">Kopieren</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="schriftformatierung" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Schriftformatierung</strong></h3>
+    <h3>
+        Es gibt verschiedene Stile, Grössen und Arten:
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode3">\textbf{Text} <strong>% Dick</strong>
+
+\textit{Text} <strong>% Kursiv</strong>
+
+\textsc{Text} <strong>% Blockschrift</strong>
+
+\underline{Text} <strong>% Unterstrichen</strong>
+
+\emph{Text} <strong>% Relative Betonung</strong></code>
+    <button onclick="copyCode3()">Kopieren</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode4"><strong>% Grösse: aufsteigend</strong> 
+
+{\tiny Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\scriptsize Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\footnotesize Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\small Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\normalsize Lorem ipsum dolor sit amet, consectetur adipiscing elit.} <strong>% Standardgrösse</strong>
+
+{\large Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\Large Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\LARGE Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\huge Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\Huge Lorem ipsum dolor sit amet, consectetur adipiscing elit.}</code>
+    <button onclick="copyCode4()">Kopieren</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode5">{\rmfamily Lorem ipsum dolor sit amet, consectetur adipiscing elit.} <strong>% Standardart</strong>
+
+{\sffamily Lorem ipsum dolor sit amet, consectetur adipiscing elit.} <strong>% Serifenlos</strong>
+
+{\ttfamily Lorem ipsum dolor sit amet, consectetur adipiscing elit.} <strong>% Monospace</strong></code>
+    <button onclick="copyCode5()">Kopieren</button>
+</div>
+<script> function copyCode5() { const code = document.getElementById("exampleCode5").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="aufzahlungen" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Aufzählungen</strong></h3>
+    <h3>
+        Normalerweise gibt es zwei Typen von Aufzählungen: <code>enumerate</code> (nummerierte Liste) und <code>itemize</code> (Liste mit Punkten)
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode6">\begin{itemize}
+	\item Erster Punkt
+	\item Zweiter Punkt
+\end{itemize}
+
+\begin{enumerate}
+	\item Erster Punkt
+	\item Zweiter Punkt
+\end{enumerate}</code>
+    <button onclick="copyCode6()">Kopieren</button>
+</div>
+<script> function copyCode6() { const code = document.getElementById("exampleCode6").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#zsumbruch"><h2>Zeilen- und Seitenumbrüche</h2></a>
+            <a href="#ausrichtung"><h2>Ausrichtung</h2></a>
+            <a href="#schriftformatierung"><h2>Schriftformatierung</h2></a>
+            <a href="#aufzahlungen"><h2>Aufzählungen</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

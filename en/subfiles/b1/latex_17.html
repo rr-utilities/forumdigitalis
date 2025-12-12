@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b1/latex_17.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.7 Additional packages
+</h1>
+
+<div id="fancyhdr" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>fancyhdr</strong></h3>
+    <h3>
+        With <code>fancyhdr</code>, you can define variable headers and footers. All you need is the following template with sample entries, which must be included in the preamble.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1">\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{School / University}
+\rhead{Title}
+
+\lfoot{Name}
+\rfoot{Page \thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}</code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="xcolor" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>xcolor</strong></h3>
+    <h3>
+        As the name suggests, you need <code>xcolor</code> to change the font colour. The following colours can be used: <code>white
+black
+red
+green
+blue
+cyan
+magenta
+yellow
+
+gray
+darkgray
+lightgray
+
+brown
+lime
+olive
+orange
+pink
+purple
+teal
+violet</code>. The following code is required for this.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode2">\textcolor{COLOR}{Text}</code>
+<button onclick="copyCode2()">Copy</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="enumitem" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>enumitem</strong></h3>
+    <h3>
+        With <code>enumitem</code>, you can vary and/or format bullet points.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode3"><strong>% itemize</strong>
+% Any symbols can be used here.
+\begin{itemize}[label=!]
+	\item First item
+\end{itemize}
+
+<strong>% enumerate</strong>
+% Here, you can start with any number.
+\begin{enumerate}[start=4]
+	\item Fourth item
+\end{enumerate}
+% Here, the numbers can be formatted as desired.
+\begin{enumerate}[label=\textbf{\arabic*.}]
+	\item Thick item
+\end{enumerate}
+% Text can also be placed here.
+\begin{enumerate}[label=\textbf{Aufgabe \arabic*:}]
+	\item Thick Item
+\end{enumerate}
+% Here, the numbers are Roman (small).
+\begin{enumerate}[label=(\roman*)]
+	\item Roman item
+\end{enumerate}
+% Here, the numbers are Roman (capital).
+\begin{enumerate}[label=\Roman*]
+	\item ROMAN item
+\end{enumerate}</code>
+<button onclick="copyCode3()">Copy</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="hyperref" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>hyperref</strong></h3>
+    <h3>
+        With <code>hyperref</code>, references to other chapters, pages, images, etc. can be created.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode4">\section{Section}
+\label{sec:section} % important
+
+A marked equation:
+\begin{equation}
+    E = mc^2
+    \label{eq:demo} % important
+\end{equation}
+
+\section{List with hyperlinks}
+\begin{enumerate}[label=\arabic*.]
+    \item Link to section \ref{sec:section}
+    \item Link to equation \ref{eq:demo}
+    \item External link: \href{https://google.ch}{Google}
+    \item External link with visible URL: \url{https://www.wikipedia.org}
+\end{enumerate}</code>
+<button onclick="copyCode4()">Copy</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="float" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>float</strong></h3>
+    <h3>
+        With <code>float</code>, you can basically have floating environments placed automatically. This change only affects the first line of the floating environments. Here is an example using figures:
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode5">\begin{figure}[H] % The H now ensures the optimal placement of the sliding environment.</code>
+<button onclick="copyCode5()">Copy</button>
+</div>
+<script> function copyCode5() { const code = document.getElementById("exampleCode5").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.5;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#fancyhdr"><h2>fancyhdr</h2></a>
+            <a href="#xcolor"><h2>xcolor</h2></a>
+            <a href="#enumitem"><h2>enumitem</h2></a>
+            <a href="#hyperref"><h2>hyperref</h2></a>
+            <a href="#float"><h2>float</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

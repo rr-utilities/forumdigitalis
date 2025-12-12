@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b1/latex_13.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.3 Text design
+</h1>
+
+<div id="lpbreaks" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Line and page breaks</strong></h3>
+    <h3>
+        Line breaks with indentation are made by pressing the Enter key twice. However, if you want to create a new independent section, you need to use a double backslash and two double backslashes to increase the spacing.
+        <br>
+        There are two options for page breaks: <code>\newpage</code> (new page is added) and <code>\pagebreak</code> (new page is added and the content of the previous page is stretched to the break).
+        <br>
+        In addition to these commands, there is also a command that prevents indents (<code>\noindent</code>) or increases vertical (v) or horizontal (h) spacing by, for example, 3 cm (<code>\vspace{3cm}</code> or <code>\hspace{3cm}</code>).
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet feugiat neque. Donec tincidunt nunc vitae arcu bibendum, at faucibus nibh elementum. Sed vel lorem ut erat rhoncus tempus in a sem. <strong>% Here follows a line break with indentation.</strong>
+
+
+Curabitur pulvinar, nulla nec finibus tempus, elit tortor consequat nulla, non fermentum enim ipsum sed erat. Fusce id tincidunt nulla. In hac habitasse platea dictumst. Donec maximus lorem ac risus luctus, non consequat eros feugiat. \\ <strong>% Here follows a new section.</strong>
+
+Proin dapibus metus et felis varius, quis porta neque varius. Suspendisse ut arcu vel mauris bibendum interdum. \\ \\ <strong>% Here follows a new section with a larger gap.</strong>
+
+Ut lacinia ligula sit amet leo tincidunt, ut varius lacus dictum. Aliquam erat volutpat. Mauris vitae magna id neque aliquam elementum. Sed nec lacus magna. Phasellus cursus magna in justo interdum, sed congue justo feugiat. Vivamus nec odio vitae ipsum sodales faucibus nec vel nunc.
+\newpage <strong>% Here is a new page.</strong>
+
+Nulla facilisi. Sed convallis ipsum nec quam porttitor, a tempor ex viverra. Etiam gravida, justo id gravida vulputate, enim mauris blandit purus, id bibendum purus ipsum a nibh.
+
+%\vfill %=> Here, you could insert this command so that \pagebreak no longer distorts the line spacing but rather the section spacing.
+
+<strong>% There is no indentation here.</strong>
+\noindent Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam commodo eu justo vitae mattis. Integer in dolor nec eros placerat fermentum.
+\vspace{3cm} <strong>% There is a 3 cm gap here...</strong>
+Ut quis velit eget justo aliquam tempor. Vivamus a leo vel justo ultricies porta. Suspendisse euismod, erat non elementum vehicula, elit elit blandit \hspace{3cm} <strong>%...and here is a 3 cm gap.</strong>
+lorem, ac egestas justo sapien non turpis.
+
+\pagebreak <strong>% Here is a new page, but the content above is stretched.</strong>
+
+New page</code>
+    <button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="alignment" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Alignment</strong></h3>
+    <h3>
+        Texts in LaTeX are left-aligned and justified by default. If you want to change this, you need the following commands:
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode2">\begin{center} <strong>% Centred</strong>
+	Curabitur pharetra feugiat odio, vitae euismod velit accumsan sit amet. Quisque congue, augue non iaculis tempus, turpis mauris convallis turpis, et viverra sapien sem at lorem. Morbi vitae nisl vel nunc vehicula sagittis. Vestibulum quis eros eget mi ultrices sodales sed id ante.
+\end{center}
+
+\begin{flushright} <strong>% Right-aligned</strong>
+	Ut vitae augue ligula. Vivamus fringilla turpis id justo hendrerit, sed ultricies erat volutpat. Duis porta tellus ac justo feugiat porttitor. Sed in malesuada turpis. Donec ac ultrices velit, nec suscipit turpis. Sed sed ex quis velit tempor venenatis.
+\end{flushright}</code>
+    <button onclick="copyCode2()">Copy</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="fof" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Formatting of fonts</strong></h3>
+    <h3>
+        There are various styles, sizes and types:
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode3">\textbf{Text} <strong>% Bold</strong>
+
+\textit{Text} <strong>% Italic</strong>
+
+\textsc{Text} <strong>% Block letters</strong>
+
+\underline{Text} <strong>% Underline</strong>
+
+\emph{Text} <strong>% Relative emphasis</strong></code>
+    <button onclick="copyCode3()">Copy</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode4"><strong>% Size: ascending</strong> 
+
+{\tiny Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\scriptsize Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\footnotesize Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\small Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\normalsize Lorem ipsum dolor sit amet, consectetur adipiscing elit.} <strong>% Standard size</strong>
+
+{\large Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\Large Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\LARGE Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\huge Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+{\Huge Lorem ipsum dolor sit amet, consectetur adipiscing elit.}</code>
+    <button onclick="copyCode4()">Copy</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode5">{\rmfamily Lorem ipsum dolor sit amet, consectetur adipiscing elit.} <strong>% Standard type</strong>
+
+{\sffamily Lorem ipsum dolor sit amet, consectetur adipiscing elit.} <strong>% Sans serif</strong>
+
+{\ttfamily Lorem ipsum dolor sit amet, consectetur adipiscing elit.} <strong>% Monospace</strong></code>
+    <button onclick="copyCode5()">Copy</button>
+</div>
+<script> function copyCode5() { const code = document.getElementById("exampleCode5").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="lists" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Lists</strong></h3>
+    <h3>
+        There are usually two types of lists: <code>enumerate</code> (numbered list) and <code>itemize</code> (bulleted list)
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode6">\begin{itemize}
+	\item First item
+	\item Second item
+\end{itemize}
+
+\begin{enumerate}
+	\item First item
+	\item Second item
+\end{enumerate}</code>
+    <button onclick="copyCode6()">Copy</button>
+</div>
+<script> function copyCode6() { const code = document.getElementById("exampleCode6").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#lpbreaks"><h2>Line and page breaks</h2></a>
+            <a href="#alignment"><h2>Alignment</h2></a>
+            <a href="#fof"><h2>Formatting of fonts</h2></a>
+            <a href="#lists"><h2>Lists</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

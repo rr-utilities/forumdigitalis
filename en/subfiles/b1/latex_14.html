@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b1/latex_14.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.4 Structuring
+</h1>
+
+<h3>In LaTeX, each document class offers different structuring options. These are used to separate content and structure.</h3>
+
+<div id="article" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>article</strong></h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1">\section{Title}
+
+\subsection{Subtitle}
+
+\subsubsection{Sub-subtitle}
+
+\paragraph{Paragraph}
+
+\subparagraph{Subparagraph}</code>
+    <button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="report" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>report</strong></h3>
+</div>
+<div class="code-box">
+<code id="exampleCode2">\chapter{Chapter}
+
+\section{Title}
+
+\subsection{Subtitle}
+
+\subsubsection{Sub-subtitle}
+
+\paragraph{Paragraph}
+
+\subparagraph{Subparagraph}</code>
+    <button onclick="copyCode2()">Copy</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="book" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>book</strong></h3>
+</div>
+<div class="code-box">
+<code id="exampleCode3">\chapter{Chapter}
+
+\section{Title}
+
+\subsection{Subtitle}
+
+\subsubsection{Sub-subtitle}
+
+\paragraph{Paragraph}
+
+\subparagraph{Subparagraph}</code>
+    <button onclick="copyCode3()">Copy</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="letter" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>letter</strong></h3>
+    <h3>
+        There are no chapters / sections in this class.
+    </h3>
+</div>
+
+<div id="beamer" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>beamer</strong></h3>
+</div>
+<div class="code-box">
+<code id="exampleCode4">\section{Title}
+
+\subsection{Subtitle}</code>
+    <button onclick="copyCode4()">Copy</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.5;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#article"><h2>article</h2></a>
+            <a href="#report"><h2>report</h2></a>
+            <a href="#book"><h2>book</h2></a>
+            <a href="#letter"><h2>letter</h2></a>
+            <a href="#beamer"><h2>beamer</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

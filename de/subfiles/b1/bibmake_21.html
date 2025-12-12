@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b1/bibmake_21.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    2.1 Was ist BibTeX?
+</h1>
+
+<div id="einfuhrung" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Einführung</strong>
+    </h3>
+    <h3>
+        BibTeX ist ein externes Programm, das zu LaTeX gehört und automatisch Literaturverzeichnisse erzeugt.
+        Man speichert die Quellen in einer <code>.bib</code>-Datei (z.B. Bücher, Artikel, Websites), und BibTeX formatiert daraus beim Kompilieren das Literaturverzeichnis und die Zitate im Text – je nach gewünschtem Zitierstil (APA, IEEE, Chicago usw.).
+    </h3>
+</div>
+
+<div id="anwendung" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Anwendung</strong>
+    </h3>
+    <h3>
+        Für folgende Befehle muss die Engine <code>biber</code> entsprechen.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1"><strong>% In der Präambel</strong>
+\usepackage[backend=biber,style=apa]{biblatex} % APA-Zitierstil
+\addbibresource{literatur.bib} % bib-Datei mit den Quellen
+
+<strong>% Im Text</strong>
+Lorem ipsum \parencite{Quelle1}. % Quelle1 aus der bib-Datei
+
+\printbibliography % Quellenverzeichnis (dort, wo erwünscht)</code>
+<button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#einfuhrung"><h2>Einführung</h2></a>
+            <a href="#anwendung"><h2>Anwendung</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

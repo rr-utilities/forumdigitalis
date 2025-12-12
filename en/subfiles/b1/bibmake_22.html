@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b1/bibmake_22.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    2.2 Important entry types
+</h1>
+
+<div id="introduction" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        In the <code>.bib</code> file, where the sources are entered, they are divided into individual entry types. Each of these types has different components.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">@book{Source1,		% Book (monograph)
+	author		= {},
+	title		= {},
+	publisher 	= {},
+	year		= {},
+	address	 	= {},
+	edition	 	= {},
+	isbn		= {}
+}</code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode2">@article{Source2,	% magazine article
+	author		= {},
+	title		= {},
+	journal 	= {},
+	year		= {},
+	volume		= {},
+	number		= {},
+	pages		= {},
+	doi		= {}
+}
+</code>
+<button onclick="copyCode2()">Copy</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode3">@inproceedings{Source3,	% Individual contribution in conference proceedings
+	author		= {},
+	title		= {},
+	booktitle	= {},
+	year		= {},
+	editor		= {},
+	pages		= {},
+	publisher	= {},
+	address		= {}
+}</code>
+<button onclick="copyCode3()">Copy</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode4">@incollection{Source4,	% Chapter in anthology
+	author		= {},
+	title		= {},
+	booktitle	= {},
+	editor		= {},
+	publisher	= {},
+	address		= {},
+	year		= {},
+	pages		= {}
+}</code>
+<button onclick="copyCode4()">Copy</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode5">@proceedings{Source5,	% Complete conference proceedings
+	editor		= {},
+	title		= {},	
+	year		= {},
+	publisher	= {},
+	address		= {}
+}</code>
+<button onclick="copyCode5()">Copy</button>
+</div>
+<script> function copyCode5() { const code = document.getElementById("exampleCode5").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode6">@report{Source6,	% Report (internal, public, technical)
+	author		= {},
+	title		= {},
+	institution	= {},
+	year		= {},
+	number		= {},
+	address		= {},
+	url		= {}
+}</code>
+<button onclick="copyCode6()">Copy</button>
+</div>
+<script> function copyCode6() { const code = document.getElementById("exampleCode6").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode7">@techreport{Source7,	% Technical report (special report type)
+	author		= {},
+	title		= {},
+	institution	= {},
+	year		= {},
+	number		= {},
+	address		= {}
+}</code>
+<button onclick="copyCode7()">Copy</button>
+</div>
+<script> function copyCode7() { const code = document.getElementById("exampleCode7").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode8">@phdthesis{Source8,	% Doctoral thesis
+	author		= {},
+	title		= {},
+	school		= {},
+	year		= {},
+	address		= {}
+}</code>
+<button onclick="copyCode8()">Copy</button>
+</div>
+<script> function copyCode8() { const code = document.getElementById("exampleCode8").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode9">@mastersthesis{Source9,	% Master's thesis
+	author		= {},
+	title		= {},
+	school		= {},
+	year		= {},
+	address		= {}
+}</code>
+<button onclick="copyCode9()">Copy</button>
+</div>
+<script> function copyCode9() { const code = document.getElementById("exampleCode9").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode10">@misc{Source10,		% Anything that does not clearly fit into any category
+	author		= {},
+	title		= {},
+	year	 	= {},
+	url		= {},
+	note		= {}
+}</code>
+<button onclick="copyCode10()">Copy</button>
+</div>
+<script> function copyCode10() { const code = document.getElementById("exampleCode10").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode11">@online{Source11,	% Only with biblatex (not with BibTeX)
+	author		= {},
+	title		= {},
+	year		= {},
+	url		= {},
+	urldate		= {}
+}</code>
+<button onclick="copyCode11()">Copy</button>
+</div>
+<script> function copyCode11() { const code = document.getElementById("exampleCode11").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode12">@manual{Source12,	% Operating instructions, manuals
+	title		= {},
+	author		= {},
+	organization	= {},
+	year		= {},
+	url		= {}
+}</code>
+<button onclick="copyCode12()">Copy</button>
+</div>
+<script> function copyCode12() { const code = document.getElementById("exampleCode12").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div class="code-box">
+<code id="exampleCode13">@unpublished{Source13,	 % Unpublished documents
+	author		= {},
+	title		= {},
+	note		= {},
+	year		= {}
+}</code>
+<button onclick="copyCode13()">Copy</button>
+</div>
+<script> function copyCode13() { const code = document.getElementById("exampleCode13").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<div class="code-box">
+<code id="exampleCodeX"></code>
+<button onclick="copyCodeX()">Kopieren</button>
+</div>
+<script> function copyCodeX() { const code = document.getElementById("exampleCodeX").innerText; navigator.clipboard.writeText(code);}</script>
+
+	-
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non metus sed sem eleifend bibendum. Sed euismod, lacus in porttitor pretium, lorem mauris faucibus justo, sit amet varius ipsum ante at nunc. Vestibulum vel ultrices purus. Suspendisse potenti. Mauris ac gravida ex, sed viverra nibh. Donec commodo nibh eget tortor pulvinar, at tincidunt nibh convallis.
+
+Curabitur pharetra feugiat odio, vitae euismod velit accumsan sit amet. Quisque congue, augue non iaculis tempus, turpis mauris convallis turpis, et viverra sapien sem at lorem. Morbi vitae nisl vel nunc vehicula sagittis. Vestibulum quis eros eget mi ultrices sodales sed id ante.
+
+Ut vitae augue ligula. Vivamus fringilla turpis id justo hendrerit, sed ultricies erat volutpat. Duis porta tellus ac justo feugiat porttitor. Sed in malesuada turpis. Donec ac ultrices velit, nec suscipit turpis. Sed sed ex quis velit tempor venenatis.
+
+Donec faucibus, eros ut commodo condimentum, erat velit fermentum magna, id efficitur mi enim non justo. Sed nec porttitor metus, vitae fermentum leo. Suspendisse id orci quis nisi vestibulum egestas. Nulla facilisi.
+
+Nunc cursus, eros et tristique bibendum, purus odio laoreet mauris, sit amet tempor sem leo nec enim. In hac habitasse platea dictumst. Pellentesque id orci vel ligula sodales pharetra. Morbi dapibus arcu ut sapien dignissim, nec convallis purus vestibulum.
+
+Mauris tempus, sapien in facilisis iaculis, libero enim suscipit magna, a gravida erat felis non risus. Sed commodo, tortor sed finibus consequat, velit nunc blandit justo, non tincidunt mauris lorem id urna.
+
+Proin eleifend luctus ligula a fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer tincidunt felis sit amet purus maximus, sit amet aliquet est varius.
+
+Pellentesque interdum, libero nec aliquam suscipit, mi enim interdum sem, sit amet luctus enim nisi a justo. Suspendisse vitae sapien eu odio porta facilisis.
+
+Vivamus vehicula metus nec dolor vehicula, nec tincidunt lacus bibendum. Sed pretium metus sed tortor mattis, at egestas lacus malesuada. Sed ut orci non nisi suscipit convallis eget eget diam.
+
+Aliquam rhoncus efficitur libero, vel elementum elit. Duis convallis nibh a justo varius, at feugiat nunc faucibus. Etiam et erat ut mauris porttitor elementum sed vitae turpis.

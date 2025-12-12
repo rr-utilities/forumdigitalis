@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b1/latex_17.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.7 Weitere Pakete
+</h1>
+
+<div id="fancyhdr" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>fancyhdr</strong></h3>
+    <h3>
+        Mit <code>fancyhdr</code> kann man Kopf- und Fusszeilen variabel definieren. Dafür reicht schon folgende Vorlage mit Beispiel-Einträgen, welche in der Präambel stehen muss.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1">\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{Schule / Uni}
+\rhead{Titel}
+
+\lfoot{Name}
+\rfoot{Seite \thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}</code>
+<button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="xcolor" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>xcolor</strong></h3>
+    <h3>
+        Wie der Name schon sagt, braucht man <code>xcolor</code>, um die Schriftfarbe zu ändern. Folgende Farben können gebraucht werden: <code>white
+black
+red
+green
+blue
+cyan
+magenta
+yellow
+
+gray
+darkgray
+lightgray
+
+brown
+lime
+olive
+orange
+pink
+purple
+teal
+violet</code>. Folgender Code wird dafür gebraucht.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode2">\textcolor{FARBE}{Text}</code>
+<button onclick="copyCode2()">Kopieren</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="enumitem" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>enumitem</strong></h3>
+    <h3>
+        Mit <code>enumitem</code> kann man Aufzählungssymbole variieren und / oder formatieren.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode3"><strong>% itemize</strong>
+% Hier können beliebige Symbole eingesetzt werden.
+\begin{itemize}[label=!]
+	\item Erstes Item
+\end{itemize}
+
+<strong>% enumerate</strong>
+% Hier kann man bei beliebiger Zahl beginnen.
+\begin{enumerate}[start=4]
+	\item Viertes Item
+\end{enumerate}
+% Hier können die Zahlen beliebig formatiert werden.
+\begin{enumerate}[label=\textbf{\arabic*.}]
+	\item Dickes Item
+\end{enumerate}
+% Hier kann auch ein Text stehen.
+\begin{enumerate}[label=\textbf{Aufgabe \arabic*:}]
+	\item Dickes Item
+\end{enumerate}
+% Hier sind die Zahlen römisch (klein).
+\begin{enumerate}[label=(\roman*)]
+	\item Römisches Item
+\end{enumerate}
+% Hier sind die Zahlen römisch (gross).
+\begin{enumerate}[label=\Roman*]
+	\item RÖMISCHES Item
+\end{enumerate}</code>
+<button onclick="copyCode3()">Kopieren</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="hyperref" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>hyperref</strong></h3>
+    <h3>
+        Mit <code>hyperref</code> können Referenzen zu anderen Kapiteln, Seiten, Bildern etc. erstellt werden.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode4">\section{Abschnitt}
+\label{sec:abschnitt} % wichtig
+
+Eine markierte Gleichung:
+\begin{equation}
+    E = mc^2
+    \label{eq:demo} % wichtig
+\end{equation}
+
+\section{Listen mit Hyperlinks}
+\begin{enumerate}[label=\arabic*.]
+    \item Link zu Abschnitt \ref{sec:abschnitt}
+    \item Link zu Gleichung \ref{eq:demo}
+    \item Externer Link: \href{https://google.ch}{Google}
+    \item Externer Link mit sichtbarer URL: \url{https://www.wikipedia.org}
+\end{enumerate}</code>
+<button onclick="copyCode4()">Kopieren</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="float" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>float</strong></h3>
+    <h3>
+        Durch <code>float</code> kann man grundsätzlich Gleitumgebungen automatischen platzieren lassen. Diese Änderung beeinflusst nur die erste Zeile der Gleitumgeungen. Hier am Beispiel von Figuren:
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode5">\begin{figure}[H] % Das H sorgt nun für die optimale Platzierung der Gleitumgebung.</code>
+<button onclick="copyCode5()">Kopieren</button>
+</div>
+<script> function copyCode5() { const code = document.getElementById("exampleCode5").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.5;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#fancyhdr"><h2>fancyhdr</h2></a>
+            <a href="#xcolor"><h2>xcolor</h2></a>
+            <a href="#enumitem"><h2>enumitem</h2></a>
+            <a href="#hyperref"><h2>hyperref</h2></a>
+            <a href="#float"><h2>float</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

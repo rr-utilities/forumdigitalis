@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b1/latex_12.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.2 Basics
+</h1>
+
+<div id="docclass" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Documentclasses</strong>
+    </h3>
+    <h3>
+        The document class defines the basic structure and layout of a document. You determine font sizes, page layout, header and footer, spacing between paragraphs and lines, and much more.
+        <ul>
+            <li>article: Standard for academic articles, reports, short documents, homework assignments. No chapters, only sections.</li>
+            <li>report: For longer works with several chapters, e.g. term papers or project reports.</li>
+            <li>book: For books, theses, larger documents with chapters, title pages, tables of contents.</li>
+            <li>letter: For letters, personalised cover letters.</li>
+            <li>beamer: For presentations (similar to PowerPoint, but in PDF format)</li>
+        </ul>
+    </h3>
+</div>
+
+
+<div id="preamble" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Preamble</strong>
+    </h3>
+    <h3>
+        In LaTeX, every document begins with a preamble in which the document class and packages are defined. The line <code>\documentclass[a4paper,twoside,10pt]{article}</code> specifies the format, layout and font size. This is followed by the title (<code>\title</code>), author (<code>\author</code>) and date (<code>\date</code>). Everything between <code>\begin{document}</code> and <code>\end{document}</code> is displayed in the PDF. Commands such as <code>\maketitle</code> generate the title, while <code>\tableofcontents</code>, <code>\listoffigures</code> and <code>\listoftables</code> automatically generate the table of contents, list of figures and list of tables. <code>\printbibliography</code> inserts the bibliography, while the actual content comes after \newpage. The preamble and these commands therefore structure the document layout, tables of contents and layout.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1">\documentclass[a4paper,twoside,10pt]{article}
+
+% Here are the packages
+
+\title{Lorem ipsum}
+\author{Your name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents	% Table of contents
+\listoffigures		% List of figures
+\listoftables		% List of tables
+\printbibliography[title={Bibliography}]
+
+\newpage
+
+% Here comes the content
+
+\end{document}</code>
+    <button onclick="copyCode()">Copy</button>
+</div>
+<script> function copyCode() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="basicpackages" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Basic packages</strong>
+    </h3>
+    <h3>
+        In programming, mathematics or TeX/LaTeX, packages are additional modules or libraries that provide functions, classes or styles so that you don't have to program everything yourself. Here are some basic packages:
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode2">% Default
+\usepackage{a4wide}				% Page setting to A4
+\usepackage[T1]{fontenc}			% Text fonts with T1 encoding
+\usepackage[utf8]{inputenc}			% Special and diacritical characters in UTF-8 format
+\usepackage{lmodern}				% Latin Modern font as standard serif font
+\usepackage[ngerman]{babel}			% German language pack
+
+% Basic packages
+\usepackage{fancyhdr}				% Header and footer
+\usepackage{xcolor}				% Coloured font
+\usepackage{enumitem}				% Various enumeration methods
+\usepackage{tcolorbox}				% Boxes for highlights</code>
+    <button onclick="copyCode()">Copy</button>
+</div>
+<script> function copyCode() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#docclass"><h2>Documentclasses</h2></a>
+            <a href="#preamble"><h2>Preamble</h2></a>
+            <a href="#basicpackages"><h2>Basic packages</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>
