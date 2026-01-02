@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b2/CSS_23.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    2.3 Text und Inhalt
+</h1>
+
+<div id="varianten" style="padding-top:100px; margin-top:-100px;">
+    <h3><strong>Varianten</strong></h3>
+    <h3>
+        Mit CSS kann das Erscheinungsbild von Text und Schriftarten präzise gesteuert werden. 
+        <code>font-family</code> legt die Schriftart fest, <code>font-size</code> die Schriftgrösse, <code>font-weight</code> die Stärke (z. B. normal, bold). 
+        <code>line-height</code> steuert den Zeilenabstand, <code>text-align</code> die Ausrichtung. Mit <code>text-decoration</code> können Unterstreichungen oder Durchstreichungen hinzugefügt werden. 
+        <code>white-space</code> regelt den Umgang mit Leerzeichen und Zeilenumbrüchen.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">p {
+    font-family: Arial, sans-serif; /* Schriftart */
+    font-size: 16px;                /* Schriftgrösse */
+    font-weight: bold;              /* Schriftstärke */
+    line-height: 1.5;               /* Zeilenhöhe */
+    text-align: center;             /* Textausrichtung */
+    text-decoration: underline;     /* Unterstreichung */
+    white-space: nowrap;            /* keine Umbrüche */
+}</code>
+<button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#varianten"><h2>Varianten</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

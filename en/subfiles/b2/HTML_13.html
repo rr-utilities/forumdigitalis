@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b2/HTML_13.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.3 Text and content
+</h1>
+
+<div id="headings" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Headings</strong>
+    </h3>
+    <h3>
+        HTML provides six levels of headings: <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>. 
+        They structure content hierarchically, from the most important to the least, aiding readability and semantic markup.
+    </h3>
+</div>
+
+<div id="text" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Text</strong>
+    </h3>
+    <h3>
+        Paragraphs are marked with <code>&lt;p&gt;</code>. Line breaks use <code>&lt;br&gt;</code>, and thematic breaks use <code>&lt;hr&gt;</code>. These elements structure running text and improve readability.
+    </h3>
+</div>
+
+<div id="emphasis" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Emphasis</strong>
+    </h3>
+    <h3>
+        HTML provides various elements for emphasis and special formatting: <code>&lt;strong&gt;</code> for important content, <code>&lt;em&gt;</code> for emphasized content, <code>&lt;code&gt;</code> for code snippets, <code>&lt;pre&gt;</code> for preformatted text, and <code>&lt;mark&gt;</code> to highlight text.
+    </h3>
+</div>
+
+<div id="example" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Example</strong>
+    </h3>
+    <h3>
+        The following is an example using the previously mentioned tags.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Example: Text &amp; Headings&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h1&gt;This is an H1 heading&lt;/h1&gt;
+	&lt;h2&gt;This is an H2 heading&lt;/h2&gt;
+
+	&lt;p&gt;This is a paragraph with normal text.&lt;/p&gt;
+	&lt;p&gt;Here is a line break&lt;br&gt;directly after.&lt;/p&gt;
+	&lt;hr&gt;
+
+	&lt;strong&gt;This is important text&lt;/strong&gt;
+	&lt;em&gt;This is emphasized text&lt;/em&gt;
+	&lt;code&gt;ExampleCode()&lt;/code&gt;
+	&lt;pre&gt;Preformatted text&lt;/pre&gt;
+	&lt;mark&gt;Highlighted text&lt;/mark&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#headings"><h2>Headings</h2></a>
+            <a href="#text"><h2>Text</h2></a>
+            <a href="#emphasis"><h2>Emphasis</h2></a>
+            <a href="#example"><h2>Example</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

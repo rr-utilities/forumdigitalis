@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b2/HTML_14.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.4 Lists
+</h1>
+
+<div id="lists" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Lists</strong>
+    </h3>
+    <h3>
+        HTML provides different types of lists: unordered lists (<code>&lt;ul&gt;</code> with <code>&lt;li&gt;</code>), ordered lists (<code>&lt;ol&gt;</code> with <code>&lt;li&gt;</code>), and definition lists (<code>&lt;dl&gt;</code> with <code>&lt;dt&gt;</code> for the term and <code>&lt;dd&gt;</code> for the definition). They help structure content in a clear and readable way.
+    </h3>
+</div>
+
+<div id="example" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Example</strong>
+    </h3>
+    <h3>
+        Below are examples for each type of list.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Example: Lists&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;h2&gt;Unordered List&lt;/h2&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Item A&lt;/li&gt;
+		&lt;li&gt;Item B&lt;/li&gt;
+		&lt;li&gt;Item C&lt;/li&gt;
+	&lt;/ul&gt;
+
+	&lt;h2&gt;Ordered List&lt;/h2&gt;
+	&lt;ol&gt;
+		&lt;li&gt;First Step&lt;/li&gt;
+		&lt;li&gt;Second Step&lt;/li&gt;
+		&lt;li&gt;Third Step&lt;/li&gt;
+	&lt;/ol&gt;
+
+	&lt;h2&gt;Definition List&lt;/h2&gt;
+	&lt;dl&gt;
+		&lt;dt&gt;HTML&lt;/dt&gt; &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+		&lt;dt&gt;CSS&lt;/dt&gt; &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+	&lt;/dl&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+<button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#lists"><h2>Lists</h2></a>
+            <a href="#example"><h2>Example</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

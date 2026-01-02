@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b1/tikz_34.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    3.4 Graphical elements
+</h1>
+
+<div id="nodes" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Nodes</strong>
+    </h3>
+    <h3>
+        Represent points or text elements in a graphic.
+        <br>
+        Syntax:
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">\begin{tikzpicture}
+    \node at (0,0) {Text}; % simple node
+    \node[draw, rectangle] at (2,0) {Box}; % node in a rectangle
+    \node[draw, circle, fill=red!40] at (4,0) {Circle}; % node in a circle
+\end{tikzpicture}</code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div>
+    <h3>
+        Options:
+        <ul>
+            <li>draw → draw a border around the node</li>
+            <li>circle, rectangle → shape of the node</li>
+            <li>fill=color!NUMBER → background color mixed with white (percentage)</li>
+            <li>anchor=<strong>option</strong> → alignment inside the node</li>
+        </ul>
+    </h3>
+</div>
+
+<div id="lines-arrows" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Lines and Arrows</strong>
+    </h3>
+    <h3>
+        Connect nodes or indicate directions.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode2">\begin{tikzpicture}
+    \node (A) {Center};
+
+    \node[right=of A] (B) {Right};
+    \node[above=of A] (C) {Top};
+    \node[left=of A]  (D) {Left};
+    \node[below=of A]  (E) {Bottom};
+
+    \draw[dotted] (A) -- (B);                  % dotted line
+    \draw[->, ultra thick] (A) -- (C);         % arrow
+    \draw[<->, dashed, color=blue] (A) -- (D); % arrows in both directions
+    \draw (A) -- (E) node[midway, right] {Label}; % line with label
+\end{tikzpicture}</code>
+<button onclick="copyCode2()">Copy</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div>
+    <h3>
+        Options:
+        <ul>
+            <li>thick, ultra thick → line width</li>
+            <li>dashed, dotted → line styles</li>
+            <li>color=<strong>color</strong> → line color</li>
+        </ul>
+    </h3>
+</div>
+
+<div id="anchors" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Anchor Points</strong>
+    </h3>
+    <h3>
+        Define the reference point of a node to create precise connections.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode3">\begin{tikzpicture}
+    \node (A) {Left};
+    \node[right=of A] (B) {Right};
+
+    \draw (A.east) -- (B.west);
+\end{tikzpicture}</code>
+<button onclick="copyCode3()">Copy</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div>
+    <h3>
+        Available anchors:
+        <ul>
+            <li>center (default)</li>
+            <li>north, south, east, west</li>
+            <li>north east, south west, etc.</li>
+        </ul>
+    </h3>
+</div>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#nodes"><h2>Nodes</h2></a>
+            <a href="#lines-arrows"><h2>Lines and Arrows</h2></a>
+            <a href="#anchors"><h2>Anchor Points</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

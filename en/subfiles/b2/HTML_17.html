@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b2/HTML_17.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.7 Structure and layout
+</h1>
+
+<div id="div_span" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>&lt;div&gt; and &lt;span&gt;</strong>
+    </h3>
+    <h3>
+        <code>&lt;div&gt;</code> is a block-level element that wraps entire sections, whereas <code>&lt;span&gt;</code> is an inline element that groups smaller parts of text or elements within a paragraph. Both are mainly used for structuring content and styling purposes.
+    </h3>
+</div>
+
+<div id="semantic_tags" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Semantic Tags</strong>
+    </h3>
+    <h3>
+        Semantic HTML tags clarify the role of a content section. Examples include:
+        <ul>
+            <li><code>&lt;header&gt;</code>: page header</li>
+            <li><code>&lt;nav&gt;</code>: navigation area</li>
+            <li><code>&lt;main&gt;</code>: main content of the page</li>
+            <li><code>&lt;section&gt;</code>: thematically separated section</li>
+            <li><code>&lt;article&gt;</code>: standalone post or article</li>
+            <li><code>&lt;footer&gt;</code>: page footer</li>
+        </ul>
+    </h3>
+</div>
+
+<div>
+    <h3>
+        Semantics improves readability for developers, enhances search engine optimization (SEO), and supports screen readers for accessibility. It ensures that content and layout are clearly separated.
+    </h3>
+</div>
+
+<div id="example" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Example</strong>
+    </h3>
+    <h3>
+        The following example demonstrates a simple semantic structure of a webpage.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Structure &amp; Layout&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;a href="#section1"&gt;Section 1&lt;/a&gt;
+        &lt;a href="#section2"&gt;Section 2&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;section id="section1"&gt;
+            &lt;h2&gt;Section 1&lt;/h2&gt;
+            &lt;p&gt;Content of Section 1.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;article id="section2"&gt;
+            &lt;h2&gt;Article&lt;/h2&gt;
+            &lt;p&gt;This is a standalone article.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;© 2026 My Website&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#div_span"><h2>&lt;div&gt; and &lt;span&gt;</h2></a>
+            <a href="#semantic_tags"><h2>Semantic tags</h2></a>
+            <a href="#examlple"><h2>Example</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

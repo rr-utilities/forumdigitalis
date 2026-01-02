@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b1/latex_15.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.5 Mathematics
+</h1>
+
+<div id="i-packages" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Important packages</strong></h3>
+    <h3>
+        There are three fundamental mathematics packages:
+        <ul>
+            <li><code>amsmath</code>: better equation environments (e.g. <code>align</code>), matrices, etc.</li>
+            <li><code>amssymb</code>: Quantity symbols, arrows, etc.</li>
+            <li><code>amstext</code>: Additional mathematical writings</li>
+        </ul>
+        Conveniently, you can also express all packages in a single command.
+    </h3>
+</div>
+<div class="code-box"><code id="exampleCode1">\usepackage{amsmath,amssymb,amstext}</code>
+<button onclick="copyCode1()">Copy</button></div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="basic-elements" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Basic elements</strong></h3>
+    <h3>
+        There are many basic elements, such as mathematical symbols, equations, powers, indices, Greek alphabet, etc. The dollar sign stands for a line-internal mathematical environment.
+    </h3>
+</div>
+<div class="code-box"><code id="exampleCode2">$\pm$ und $\mp$			% Plus-minus / minus-plus sign
+$\cdot$ $\cdots$ $\ldots$	% Points
+$\vdots$ $\ddots$		% Further points
+$\leq$ / $\geq$ und $\neq$	% smaller than / larger than equal to and not equal to
+$\cup$ $\cap$ $\in$ $\notin$	% Quantity symbols
+
+<strong>% Equations with powers and indices</strong>
+\begin{equation} % if equation* is omitted, the automatic numbering of equations is omitted 
+	a^{2} + b^{2} = c^{2}
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		f(x) &= a_{0} + xb_{0} \\
+		f'(x) &= b_{0}
+	\end{aligned}
+\end{equation}
+
+<strong>% Accents, etc.</strong>
+$\bar{v}$ $\vec{v}$ $\overline{vvv}$	% Accents
+$\overbrace{abc}\underbrace{def}$	% Braces</code>
+<button onclick="copyCode2()">Copy</button></div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="greek-alphabet" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Greek alphabet</strong></h3>
+    <h3>
+        Many capital letters do not have their own command because they look identical in Latin (e.g. Alpha, Beta, Epsilon). These are simply written as normal capital letters, not as <code>\Alpha</code>. Note: The tilde is used to ensure that there are spaces between the letters in the final document. The following serves as a template for copying!
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode3">$\alpha~\beta~\gamma~\delta~\epsilon~\varepsilon~
+\zeta~\eta~\theta~\vartheta~\iota~\kappa~\lambda~
+\mu~\nu~\xi~o~\pi~\varpi~\rho~\varrho~\sigma~
+\varsigma~\tau~\upsilon~\phi~\varphi~\chi~\psi~\omega$ \\
+$\Gamma~\Delta~\Theta~\Lambda~\Xi~\Pi~\Sigma~\Upsilon~\Phi~\Psi~\Omega$</code>
+<button onclick="copyCode3()">Copy</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="fractions" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Fractions</strong></h3>
+    <h3>
+        There are different types of fractions in different sizes, but they are basically structured in a similar way.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode4">\begin{equation}
+	\frac{a}{b} = \tfrac{a}{b} = \dfrac{a}{b}	% normal = reduced = enlarged
+\end{equation}</code>
+    <button onclick="copyCode4()">Copy</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="brackets" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Brackets</strong></h3>
+    <h3>
+        Normal brackets <code>()</code> and square brackets <code>[]</code> do not require a command (cf. curved brackets, which require a backslash in front of them). In the case of fractions, for example, the brackets become larger. This is where the commands <code>\left(</code> and <code>\right)</code> are used, which work with all types of brackets.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode5">\begin{equation}
+	\begin{aligned}
+		(a + b) &= [a + b] = \{a + b\} \\	% Curly brackets require a backslash
+		\left(\frac{a}{b}\right) &= \left[\frac{a}{b}\right]
+	\end{aligned}
+\end{equation}</code>
+    <button onclick="copyCode5()">Copy</button>
+</div>
+<script> function copyCode5() { const code = document.getElementById("exampleCode5").innerText; navigator.clipboard.writeText(code);}</script>
+
+
+<div id="arrows" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Arrows</strong></h3>
+    <h3>
+        There are many variations of arrows in all relevant directions. Note: The tilde is used to ensure that there are spaces between the letters in the final document. The following serves as a copy template!
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode6">$\leftarrow~\rightarrow~\longleftarrow~\longrightarrow~\leftrightarrow~\longleftrightarrow~
+\uparrow~\downarrow~\updownarrow$ \\ \\
+<strong>% The upper arrows as double arrows</strong>
+$\Leftarrow~\Rightarrow~\Longleftarrow~\Longrightarrow~\Leftrightarrow~\Longleftrightarrow~
+\Uparrow~\Downarrow~\Updownarrow$ \\ \\
+<strong>% Slanted arrows that do not appear twice</strong>
+$\nearrow~\searrow~\nwarrow~\swarrow$</code>
+    <button onclick="copyCode6()">Copy</button>
+</div>
+<script> function copyCode6() { const code = document.getElementById("exampleCode6").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="operators" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Operators</strong></h3>
+    <h3>
+        Operators such as sum symbols, integral symbols, etc. also have specific commands.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode7">\begin{equation}
+	\begin{aligned}
+		\sum_{k = 1}^{n} k &= \frac{n(n-1)}{2} \\	% Summation sign
+		\prod_{k = 1}^{n} k &= n! \\			% Product mark
+		\lim_{x \to \infty} f(x) &= \frac{1}{x^{2}} \\	% Limit value
+		\int_{a}^{b} f(x) &= F(x)			% Integral sign
+	\end{aligned}
+\end{equation}</code>
+    <button onclick="copyCode7()">Copy</button>
+</div>
+<script> function copyCode7() { const code = document.getElementById("exampleCode7").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="matrices" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Matrices</strong></h3>
+    <h3>
+        The structure of the matrices is the same. However, they may differ in the type of brackets, resulting in different letters, as can be seen below:
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode8">\begin{equation}
+	\begin{matrix} % without brackets
+		a & b \\
+		c & d
+	\end{matrix}
+\end{equation}
+\begin{equation}
+	\begin{pmatrix} % curly bracket
+		a & b \\
+		c & d
+	\end{pmatrix}
+\end{equation}
+\begin{equation}
+	\begin{bmatrix} % square bracket
+		a & b \\
+		c & d
+	\end{bmatrix}
+\end{equation}
+\begin{equation}
+	\begin{Bmatrix} % curly bracket
+		a & b \\
+		c & d
+	\end{Bmatrix}
+\end{equation}
+\begin{equation}
+	\begin{vmatrix} % straight bracket
+		a & b \\
+		c & d
+	\end{vmatrix}
+\end{equation}
+\begin{equation}
+	\begin{Vmatrix} % straight double bracket
+		a & b \\
+		c & d
+	\end{Vmatrix}
+\end{equation}</code>
+    <button onclick="copyCode8()">Kopieren</button>
+</div>
+<script> function copyCode8() { const code = document.getElementById("exampleCode8").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.5;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#i-packages"><h2>Important packages</h2></a>
+            <a href="#basic-elements"><h2>Basic elements</h2></a>
+            <a href="#greek-alphabet"><h2>Greek alphabet</h2></a>
+            <a href="#fractions"><h2>Fractions</h2></a>
+            <a href="#brackets"><h2>Brackets</h2></a>
+            <a href="#arrows"><h2>Arrows</h2></a>
+            <a href="#operators"><h2>Operators</h2></a>
+            <a href="#matrices"><h2>Matrices</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

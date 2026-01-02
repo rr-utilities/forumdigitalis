@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b1/latex_12.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.2 Grundlagen
+</h1>
+
+<div id="dokklassen" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Dokumentklassen</strong>
+    </h3>
+    <h3>
+        Die Dokumentklasse legt den Gurndaufbau und das Layout eines Dokuments fest. Sie bestimmen Schriftgrössen, Seitenlayout, Kopf- und Fusszeile, Abstand von Absätzen und Zeilen u.v.m.
+        <ul>
+            <li>article: Standard für wissenschaftliche Artikel, Berichte, kleine Dokumente, Hausaufgaben. Keine Kapitel, nur Abschnitte.</li>
+            <li>report: Für längere Arbeiten mit mehreren Kapitel, z.B. Semesterarbeiten oder Projektberichte.</li>
+            <li>book: Für Bücher, Abschlussarbeiten, grössere Dokumente mit Kapiteln, Titelseiten, Inhaltsverzeichnis.</li>
+            <li>letter: Für Briefe, personalisierte Anschreiben.</li>
+            <li>beamer: Für Präsentationen (ähnlich wie PowerPoint, aber in PDF)</li>
+        </ul>
+    </h3>
+</div>
+
+
+<div id="praambel" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Präambel</strong>
+    </h3>
+    <h3>
+        In LaTeX beginnt jedes Dokument mit der Präambel, in der man die Dokumentklasse und Pakete definiert. Die Zeile <code>\documentclass[a4paper,twoside,10pt]{article}</code> legt Format, Layout und Schriftgröße fest. Danach folgen Titel (<code>\title</code>), Autor (<code>\author</code>) und Datum (<code>\date</code>). Alles, was zwischen <code>\begin{document}</code> und <code>\end{document}</code> steht, wird im PDF angezeigt. Befehle wie <code>\maketitle</code> erzeugen den Titel, <code>\tableofcontents</code>, <code>\listoffigures</code> und <code>\listoftables</code> generieren automatisch Inhalts-, Abbildungs- und Tabellenverzeichnis. <code>\printbibliography</code> fügt das Literaturverzeichnis ein, während nach \newpage der eigentliche Inhalt kommt. Die Präambel und diese Befehle strukturieren also Dokumentaufbau, Verzeichnisse und Layout.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1">\documentclass[a4paper,twoside,10pt]{article}
+
+% Hier stehen die Pakete
+
+\title{Lorem ipsum}
+\author{Dein Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents	% Inhaltsverzeichnis
+\listoffigures		% Abbildungsverzeichnis
+\listoftables		% Tabellenverzeichnis
+\printbibliography[title={Literaturverzeichnis}]
+
+\newpage
+
+% Hier kommt der Inhalt
+
+\end{document}</code>
+    <button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="pakete" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Grundlegende Pakete</strong>
+    </h3>
+    <h3>
+        In Programmierung, Mathematik oder TeX/LaTeX bezeichnet man Pakete (engl. packages) als zusätzliche Module oder Bibliotheken, die Funktionen, Klassen oder Stile bereitstellen, damit man nicht alles selbst programmieren muss. Im folgenden sind einige grundlegende Pakete:
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode2">% Default
+\usepackage{a4wide}				% Seiteneinstellung auf A4
+\usepackage[T1]{fontenc}			% Textsatzschriften mit T1-Kodierung
+\usepackage[utf8]{inputenc}			% Sonder- und diakritische Zeichen in UTF-8 Format
+\usepackage{lmodern}				% Latin Modern Schriftart als Standardserifenschrift
+\usepackage[ngerman]{babel}			% Deutscher Sprachpaket
+
+% Basic-Packages
+\usepackage{fancyhdr}				% Kopf- und Fusszeile
+\usepackage{xcolor}				% Farbige Schrift
+\usepackage{enumitem}				% Verschiedene Aufzählungsmethoden
+\usepackage{tcolorbox}				% Boxen für Hervorhebungen</code>
+    <button onclick="copyCode2()">Kopieren</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#dokklassen"><h2>Dokumentklassen</h2></a>
+            <a href="#praambel"><h2>Präambel</h2></a>
+            <a href="#pakete"><h2>Grundlegende Pakete</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

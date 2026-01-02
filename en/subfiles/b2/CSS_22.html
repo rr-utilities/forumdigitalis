@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b2/CSS_22.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    2.2 Basics
+</h1>
+
+<div id="introduction" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Introduction</strong>
+    </h3>
+    <h3>
+        CSS can be applied in three ways:
+        <ul>
+            <li>Inline: directly in the HTML element using <code>style=""</code></li>
+            <li>In <code>&lt;style&gt;</code> tag: within the <code>&lt;head&gt;</code> of the HTML file</li>
+            <li>External file: <code>.css</code> file linked via <code>&lt;link&gt;</code></li>
+        </ul>
+        Syntax: A CSS rule consists of a selector and properties.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">selector {
+    property: value;
+}
+
+<strong>/* Example: */</strong>
+p {
+    color: red;
+    font-size: 16px;
+}</code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="box" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Box Model</strong>
+    </h3>
+    <h3>
+        Every HTML element is treated as a rectangle consisting of:
+        <ul>
+            <li><code>content</code>: the actual content (text, image)</li>
+            <li><code>padding</code>: space between content and border</li>
+            <li><code>border</code>: the edge around the element</li>
+            <li><code>margin</code>: space to neighboring elements</li>
+            <li><code>box-sizing</code> and <code>border-box</code>: border-box: ensures padding and border are included in the total width</li>
+        </ul>
+    </h3>
+</div>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#introduction"><h2>Introduction</h2></a>
+            <a href="#box"><h2>Box Model</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

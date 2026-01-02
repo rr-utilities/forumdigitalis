@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b1/latex_16.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.6 Gleitumgebungen
+</h1>
+<h3>
+    In LaTeX sind Gleitumgebungen Elemente wie Abbildungen, Tabellen und Minipages, die automatisch an eine optimale Position im Dokument "gleiten", um das Layout sauber zu halten. Sie lasssen sich platzieren (h, t, b, p; d.h. here, top, bottom, page), beschriften (<code>\caption</code>) und nummerieren / labeln (<code>\label</code>), sodass sie im Abbildungs- bzw. Tabellenverzeichnis erscheinen.
+</h3>
+
+<div id="abbildungen" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Abbildungen</strong></h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1">\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image}
+	\caption{Beispielabbildung}
+	\label{fig:beispiel}
+\end{figure}</code>
+    <button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="tabellen" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Tabellen</strong></h3>
+</div>
+<div class="code-box">
+<code id="exampleCode2">\begin{table}[htbp]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		A & B \\
+		\hline
+		1 & 2 \\
+		\hline
+	\end{tabular}
+	\caption{Beispieltabelle}
+	\label{tab:beispiel}
+\end{table}</code>
+    <button onclick="copyCode2()">Kopieren</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="minipages" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Minipages</strong></h3>
+</div>
+<div class="code-box">
+<code id="exampleCode3">\begin{minipage}[c]{0.45\textwidth}
+	Linker Textblock oder Bild
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.45\textwidth}
+	Rechter Textblock oder Bild
+\end{minipage}</code>
+    <button onclick="copyCode3()">Kopieren</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+	
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.4;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#abbildungen"><h2>Abbildungen</h2></a>
+            <a href="#tabellen"><h2>Tabellen</h2></a>
+            <a href="#minipages"><h2>Minipages</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

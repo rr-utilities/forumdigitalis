@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b2/HTML_12.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.2 Basics
+</h1>
+
+<div id="introduction" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Introduction</strong>
+    </h3>
+    <h3>
+        Every HTML page follows a fixed basic structure. This tells the browser how to interpret the document and where content is placed.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My first page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div>
+    <h3>
+        Explanation:
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: Defines the HTML5 standard</li>
+            <li><code>&lt;html&gt;</code>: Root element of the document</li>
+            <li><code>&lt;head&gt;</code>: Metadata (title, character set, styles, scripts)</li>
+            <li><code>&lt;body&gt;</code>: Visible content of the webpage</li>
+        </ul>
+    </h3>
+</div>
+
+<div id="comments" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Comments</strong>
+    </h3>
+    <h3>
+        Comments are ignored by the browser and are only used to explain or structure the code.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode2">&lt;!-- This is a comment --&gt;
+&lt;p&gt;This text is visible&lt;/p&gt;</code>
+<button onclick="copyCode2()">Copy</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#introduction"><h2>Introduction</h2></a>
+            <a href="#comments"><h2>Comments</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

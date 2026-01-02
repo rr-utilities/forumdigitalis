@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b1/tikz_37.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    3.7 Environments
+</h1>
+
+<div id="scope" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>scope</strong>
+    </h3>
+    <h3>
+        The <code>scope</code> environment allows you to apply local transformations or styles to a set of TikZ commands without affecting the rest of the picture. You can scale, rotate, or shift all elements inside a scope.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">\begin{tikzpicture}
+	\draw[fill=blue!20] (0,0) rectangle (2,2);
+	\node at (1,1) {Normal};
+
+	\begin{scope}[shift={(4,0)}, scale=1.5, rotate=30]
+		\draw[fill=green!20] (0,0) rectangle (2,2);
+		\node at (1,1) {Scaled+rotated};
+	\end{scope}
+
+	\begin{scope}[shift={(0,-3)}]
+		\draw[fill=yellow!50] (0,0) rectangle (2,2);
+		\node at (1,1) {Yellow};
+	\end{scope}
+\end{tikzpicture}</code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="axis" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>axis / pgfplots</strong>
+    </h3>
+    <h3>
+        The <code>axis</code> environment with the package <code>pgfplots</code> (<code>\usepackage{pgfplots}</code>!!!) is used to create plots and function graphs. You can plot mathematical functions or data easily.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode2">\begin{tikzpicture}
+	\begin{axis}[
+		title={Quadratic functions},
+		xlabel={$x$},
+		ylabel={$y$},
+		grid=both,
+		minor tick num=1,
+		width=8cm,
+		height=6cm,
+		axis lines=middle,
+		enlargelimits=0.1
+	]
+		\addplot[blue, thick, samples=100] {x^2};
+	\end{axis}
+\end{tikzpicture}</code>
+<button onclick="copyCode2()">Copy</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="node" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>\node[draw]</strong>
+    </h3>
+    <h3>
+        The <code>\node[draw]</code> command creates a node with a border. Nodes can contain text, tables, or even other TikZ commands. Useful for structured or complex content. The following example requires <code>\usetikzlibrary{positioning}</code>.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode3">\begin{tikzpicture}[node distance=2cm]
+	\node[draw, fill=yellow!20] (A) {
+		\begin{tabular}{c}
+			Start \\
+			Process
+		\end{tabular}
+	};
+   
+	\node[draw, fill=green!20, below=of A] (B) {
+		\begin{tabular}{c}
+			Decision \\
+			Yes / No
+		\end{tabular}
+	};
+
+	\draw[->, thick] (A) -- (B);
+\end{tikzpicture}</code>
+<button onclick="copyCode3()">Copy</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="path" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>path</strong>
+    </h3>
+    <h3>
+        The <code>\path</code> command defines explicit paths. You can connect points, draw shapes, or define coordinates without immediately drawing them.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode4">\begin{tikzpicture}
+    \node (A) {Start};
+    \node[right=of A, yshift=13mm] (B) {M};
+    \node[right=of B] (C) {End};
+    \draw[->] (A) -- (C);
+
+    \path (A) -- (C) coordinate[midway] (M);
+    \node[fill=yellow, circle] at (M) {Z};
+\end{tikzpicture}</code>
+<button onclick="copyCode4()">Copy</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="foreach" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>foreach</strong>
+    </h3>
+    <h3>
+        The <code>\foreach</code> command allows repetition of TikZ commands over a list of values. Useful for creating grids, patterns, or multiple shapes efficiently.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode5">\begin{tikzpicture}
+	\foreach \x in {1,...,4}
+		\draw (\x,0) -- (\x,5);
+
+	\foreach \y in {1,...,4}
+		\draw (0,\y) -- (5,\y);
+\end{tikzpicture}</code>
+<button onclick="copyCode5()">Copy</button>
+</div>
+<script> function copyCode5() { const code = document.getElementById("exampleCode5").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#scope"><h2>scope</h2></a>
+            <a href="#axis"><h2>axis / pgfplots</h2></a>
+            <a href="#node"><h2>\node[draw]</h2></a>
+            <a href="#path"><h2>path</h2></a>
+            <a href="#foreach"><h2>foreach</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

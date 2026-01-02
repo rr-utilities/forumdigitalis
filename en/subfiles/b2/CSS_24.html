@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b2/CSS_22.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    2.4 Colour and colour effects
+</h1>
+
+<div id="farben" style="padding-top:100px; margin-top:-100px;">
+    <h3><strong>Colors</strong></h3>
+    <h3>
+        CSS offers various ways to style elements with color. Colors can be specified using names, hexadecimal values, or RGB/RGBA values.
+    </h3>
+</div>
+
+<div class="code-box"><code id="exampleCode1">p {
+    color: red;        /* color name */
+    background-color: #00ff00; /* hexadecimal */
+    border-color: rgb(0,0,255); /* RGB */
+    opacity: 0.8;      /* transparency */
+}</code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="einheiten" style="padding-top:100px; margin-top:-100px;">
+    <h3><strong>Units</strong></h3>
+    <h3>
+        In CSS, sizes can be specified using different units: <code>px</code> for pixels, <code>%</code> for relative values, <code>em</code>/<code>rem</code> for font size, <code>vh</code>/<code>vw</code> for viewport height/width percentages.
+    </h3>
+</div>
+
+<div class="code-box"><code id="exampleCode2">div {
+    width: 50%;      /* 50% of parent width */
+    height: 10vh;    /* 10% of viewport height */
+    padding: 1em;    /* 1 times font size */
+}</code>
+<button onclick="copyCode2()">Copy</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="border_radius" style="padding-top:100px; margin-top:-100px;">
+    <h3><strong>border-radius</strong></h3>
+    <h3>
+        <code>border-radius</code> allows you to round the corners of boxes. Values can be specified in <code>px</code> or percentages.
+    </h3>
+</div>
+
+<div class="code-box"><code id="exampleCode3">div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 10px; /* rounding corners */
+}</code>
+<button onclick="copyCode3()">Copy</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="box_shadow" style="padding-top:100px; margin-top:-100px;">
+    <h3><strong>box-shadow</strong></h3>
+    <h3>
+        <code>box-shadow</code> creates shadows around elements. You can specify offset, blur, spread, and color.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode4">div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    box-shadow: 5px 5px 10px gray; /* x-offset, y-offset, blur, color */
+}</code>
+<button onclick="copyCode4()">Copy</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="opacity" style="padding-top:100px; margin-top:-100px;">
+    <h3><strong>opacity</strong></h3>
+    <h3>
+        The <code>opacity</code> property controls the transparency of an element. <code>1</code> = fully opaque, <code>0</code> = completely transparent.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode5">div {
+    background-color: green;
+    opacity: 0.5; /* semi-transparent */
+}</code>
+<button onclick="copyCode5()">Copy</button>
+</div>
+<script> function copyCode5() { const code = document.getElementById("exampleCode5").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#farben"><h2>Colors</h2></a>
+            <a href="#einheiten"><h2>Units</h2></a>
+            <a href="#border_radius"><h2>border-radius</h2></a>
+            <a href="#box_shadow"><h2>box-shadow</h2></a>
+            <a href="#opacity"><h2>opacity</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b1/bibmake_21.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    2.3 Using Makeindex
+</h1>
+
+<div id="introduction" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Introduction</strong>
+    </h3>
+    <h3>
+        With <code>makeindex</code>, an index directory can be created with the indexed words throughout the document.
+    </h3>
+</div>
+
+<div id="use" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Use of Makeindex</strong>
+    </h3>
+    <h3>
+        The following explains how to use <code>\index</code> and similar commands.
+    </h3>
+</div>
+<div class="code-box">
+<code id="exampleCode1">Lorem ipsum \index{dolor} sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod \index{tempor} invidunt ut labore et dolore magna aliquyam erat, sed diam \index{voluptua}. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+<strong>% A simple \index command is sufficient.</strong>
+
+\printindex		<strong>% The index directory will be located here later.</strong></code>
+<button onclick="copyCode1()">Copy</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#introduction"><h2>Introduction</h2></a>
+            <a href="#use"><h2>Use of Makeindex</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

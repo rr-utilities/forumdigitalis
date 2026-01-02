@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b2/CSS_22.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    2.2 Grundlagen
+</h1>
+
+<div id="einfuhrung" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Einführung</strong>
+    </h3>
+    <h3>
+        CSS kann auf drei Arten eingebunden werden:
+        <ul>
+            <li>Inline: direkt im HTML-Element mit <code>style=""</code></li>
+            <li>Im <code>&lt;style&gt;</code>-Tag: im <code>&lt;head&gt;</code> der HTML-Datei</li>
+            <li>Externe Datei: <code>.css</code>-Datei über <code>&lt;link&gt;</code> eingebunden</li>
+        </ul>
+        Syntax: Ein CSS-Regelwerk besteht aus einem Selektor und Eigenschaften.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">Selektor {
+    property: value;
+}
+
+<strong>/* Beispiel: */</strong>
+p {
+    color: red;
+    font-size: 16px;
+}</code>
+<button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="box" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Box Modell</strong>
+    </h3>
+    <h3>
+        Jedes HTML-Element wird als Rechteck dargestellt, bestehend aus:
+        <ul>
+            <li><code>content</code>: eigentlicher Inhalt (Text, Bild)</li>
+            <li><code>padding</code>: Abstand zwischen Inhalt und Rahmen</li>
+            <li><code>border</code>: Rahmenlinie um das Element</li>
+            <li><code>margin</code>: Abstand zum nächsten Element</li>
+            <li><code>box-sizing</code> und <code>border-box</code>: sorgt dafür, dass Padding und Border in der Gesamtbreite enthalten sind</li>
+        </ul>
+    </h3>
+</div>
+
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#einfuhrung"><h2>Einführung</h2></a>
+            <a href="#box"><h2>Box Modell</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

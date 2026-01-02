@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="../../../de/subfiles/b2/HTML_16.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.6 Media
+</h1>
+
+<div id="media" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Media</strong>
+    </h3>
+    <h3>
+        HTML allows embedding various types of media. Images are added with the <code>&lt;img&gt;</code> tag, audio with <code>&lt;audio&gt;</code>, and videos with <code>&lt;video&gt;</code>. 
+        For accessibility and SEO, it's important to provide a descriptive <code>alt</code> text for each media item.
+    </h3>
+</div>
+
+<div id="images" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Images</strong>
+    </h3>
+    <h3>
+        Use <code>&lt;img&gt;</code> to embed images. Attributes like <code>src</code> specify the file path, while <code>alt</code> provides a description for screen readers or when the image cannot be displayed.
+    </h3>
+</div>
+
+<div id="audio_video" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Audio & Video</strong>
+    </h3>
+    <h3>
+        <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> allow embedding multimedia files directly on the page. Attributes such as <code>controls</code> display playback controls.
+    </h3>
+</div>
+
+<div id="example" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Example</strong>
+    </h3>
+    <h3>
+        The following example demonstrates embedding an image, audio, and video.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Media Example&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h2&gt;Image&lt;/h2&gt;
+    &lt;img src="image.jpg" alt="Description of the image"&gt;
+
+    &lt;h2&gt;Audio&lt;/h2&gt;
+    &lt;audio controls&gt;
+        &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+        Your browser does not support audio.
+    &lt;/audio&gt;
+
+    &lt;h2&gt;Video&lt;/h2&gt;
+    &lt;video width="320" height="240" controls&gt;
+        &lt;source src="video.mp4" type="video/mp4"&gt;
+        Your browser does not support video.
+    &lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+<button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#media"><h2>Media</h2></a>
+            <a href="#images"><h2>Images</h2></a>
+            <a href="#audio_video"><h2>Audio & Video</h2></a>
+            <a href="#example"><h2>Example</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

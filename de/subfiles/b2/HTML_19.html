@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b2/HTML_19.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.9 Formulare
+</h1>
+
+<div id="einfuhrung" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Einführung</strong>
+    </h3>
+    <h3>
+        HTML-Formulare werden mit dem <code>&lt;form&gt;</code>-Element erstellt. Innerhalb eines Formulars können verschiedene Eingabefelder verwendet werden, z. B. <code>text</code>, <code>email</code>, <code>password</code>, <code>date</code> oder <code>number</code>. 
+        Mit <code>&lt;label&gt;</code> werden die Eingabefelder beschriftet, und <code>&lt;button&gt;</code> dient zum Abschicken des Formulars. Attribute wie <code>required</code> erzwingen eine Eingabe, während <code>placeholder</code> einen Platzhaltertext anzeigt.
+    </h3>
+</div>
+
+<div id="beispiel" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Beispiel</strong>
+    </h3>
+    <h3>
+        Das folgende Beispiel zeigt ein einfaches Formular mit verschiedenen Eingaben.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">&lt;!DOCTYPE html&gt;
+&lt;html lang="de"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Formulare&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;form action="#" method="post"&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" placeholder="Ihr Name" required&gt;
+        &lt;br&gt;
+
+        &lt;label for="email"&gt;E-Mail:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" placeholder="email@beispiel.com" required&gt;
+        &lt;br&gt;
+
+        &lt;label for="password"&gt;Passwort:&lt;/label&gt;
+        &lt;input type="password" id="password" name="password" required&gt;
+        &lt;br&gt;
+
+        &lt;label for="geburtstag"&gt;Geburtsdatum:&lt;/label&gt;
+        &lt;input type="date" id="geburtstag" name="geburtstag"&gt;
+        &lt;br&gt;
+
+        &lt;label for="anzahl"&gt;Anzahl:&lt;/label&gt;
+        &lt;input type="number" id="anzahl" name="anzahl" min="1" max="10"&gt;
+        &lt;br&gt;
+
+        &lt;button type="submit"&gt;Absenden&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+<button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#einfuhrung"><h2>Einführung</h2></a>
+            <a href="#beispiel"><h2>Beispiel</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

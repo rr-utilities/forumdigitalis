@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b1/tikz_33.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    3.3 Positionierung
+</h1>
+
+<div id="abs-pos" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Absolute Positionierung</strong>
+    </h3>
+    <h3>
+        Du platzierst Elemente direkt im kartesischen Koordinatensystem.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">\begin{tikzpicture}
+	\draw (0,0) -- (2,1);
+	\node at (-0.1,-0.1) {Start};
+	\node at (2.1,1.2) {Ziel};
+\end{tikzpicture}</code>
+<button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div>
+    <h3>
+        Fazit
+        <ul>
+            <li>(0,0) = Ursprung</li>
+            <li>Einheiten sind standardmässig cm</li>
+            <li>Gut für einfache Zeichnungen</li>
+            <li>Unübersichtlich bei grossen Grafiken</li>
+        </ul>
+    </h3>
+</div>
+
+<div id="rel-pos" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Relative Positionierung</strong>
+    </h3>
+    <h3>
+        Objekte werden relativ zu anderen platziert. Voraussetzung: <code>\usetikzlibrary{positioning}</code> (in der Präambel).
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode2">\begin{tikzpicture}
+	\node (A) {Start};
+	\node[below=of A] (B) {Ende};
+
+	\draw (A) -- (B);
+\end{tikzpicture}</code>
+<button onclick="copyCode2()">Kopieren</button>
+</div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div>
+    <h3>
+        Fazit
+        <ul>
+            <li>B liegt automatisch unter A</li>
+            <li>Abstand ist standardisiert</li>
+            <li>Änderungen an A verschieben B mit</li>
+        </ul>
+    </h3>
+</div>
+
+<div id="wei-pos" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Weitere Positionierung</strong>
+    </h3>
+    <h3>
+        Neben absoluten und relativen Positionierungen gibt es noch folgende Positionierung.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode3">\begin{tikzpicture}
+	\node (A) {Mitte};
+
+	\node[right=of A] (B) {Rechts};
+	\node[above=of A] (C) {Oben};
+	\node[left=of A]  (D) {Links};
+	
+	\node[below=2cm of A] (E) {Weiter unten};
+\end{tikzpicture}</code>
+<button onclick="copyCode3()">Kopieren</button>
+</div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="kom-pos" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Kombinierte Positionierung</strong>
+    </h3>
+    <h3>
+        Dann gibt es noch eine Positionierungsmöglichkeit, die relative Positionierung und absolute Positionierung kombiniert.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode4">\begin{tikzpicture}
+	\node (A) {Start};
+	\node[below=of A, xshift=5mm] (B) {Versetzt};
+
+	\draw (A) -- (B);
+\end{tikzpicture}</code>
+<button onclick="copyCode4()">Kopieren</button>
+</div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="anker" style="padding-top:100px; margin-top: -100px;">
+    <h3>
+        <strong>Anker (Ausrichtung)</strong>
+    </h3>
+    <h3>
+        Ein Anchor bestimmt, welcher Punkt eines Knotens an einer gegebenen Position liegt. Standardmässig ist das der Mittelpunkt.
+        <br>
+        Syntax: <code>\node[anchor=<strong>option</strong>] at (x,y) {Text};</code>
+        <br>
+        Das sind die Optionen: center, north, south, east, west, north west, north east, south west, south east.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode5">\begin{tikzpicture}
+	\node[anchor=north] at (0,0) {Zentrum};
+	\node[anchor=north east] at (-5,-2) {Unten links};
+	\node[anchor=south west] at (2,2) {Oben rechts};
+	
+	\draw (0,0) -- (2,2);
+	\draw (2,2) -- (-5,-2);
+\end{tikzpicture}</code>
+<button onclick="copyCode5()">Kopieren</button>
+</div>
+<script> function copyCode5() { const code = document.getElementById("exampleCode5").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div>
+    <h3>
+        Anwendungszwecke
+        <ul>
+            <li>Knoten sauber an Linien ausrichten</li>
+            <li>Überlappungen vermeiden</li>
+            <li>Texte, Symbole oder Graphen präzise platzieren</li>
+        </ul>
+    </h3>
+</div>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#abs-pos"><h2>Absolute Positionierung</h2></a>
+            <a href="#rel-pos"><h2>Relative Positionierung</h2></a>
+            <a href="#wei-pos"><h2>Weitere Positionierung</h2></a>
+            <a href="#kom-pos"><h2>Kombinierte Positionierung</h2></a>
+            <a href="#anker"><h2>Anker (Ausrichtung)</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>

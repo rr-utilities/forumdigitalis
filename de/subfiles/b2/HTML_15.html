@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab">Block 1</a>
+                <a href="../../b2.html" class="tab active">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b2/HTML_15.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.5 Links und Navigation
+</h1>
+
+<div id="links" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Links</strong>
+    </h3>
+    <h3>
+        Mit dem HTML-Element <code>&lt;a&gt;</code> können Verknüpfungen zu anderen Seiten oder Ressourcen erstellt werden. Links können intern (innerhalb derselben Website) oder extern (zu einer anderen Website) sein. 
+    </h3>
+</div>
+
+<div id="target" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Target-Attribute</strong>
+    </h3>
+    <h3>
+        Mit <code>target="_blank"</code> öffnet sich ein Link in einem neuen Browser-Tab oder Fenster. Standardmässig wird ein Link im selben Fenster geöffnet.
+    </h3>
+</div>
+
+<div id="anker" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Ankerlinks</strong>
+    </h3>
+    <h3>
+        Ankerlinks springen zu einem bestimmten Abschnitt innerhalb derselben Seite. Dazu wird die ID eines Elements im <code>href</code> verwendet, z. B. <code>&lt;a href="#section1"&gt;</code>.
+    </h3>
+</div>
+
+<div id="beispiel" style="padding-top:100px; margin-top:-100px;">
+    <h3>
+        <strong>Beispiel</strong>
+    </h3>
+    <h3>
+        Im Folgenden ist ein möglicher Anwendungsbeispiel.
+    </h3>
+</div>
+
+<div class="code-box">
+<code id="exampleCode1">&lt;!DOCTYPE html&gt;
+&lt;html lang="de"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Links &amp; Navigation&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h2&gt;Externer Link&lt;/h2&gt;
+    &lt;a href="https://rr-utilities.github.io/forumdigitalis/" target="_blank"&gt;Beispielseite öffnen&lt;/a&gt;
+
+    &lt;h2&gt;Interner Link&lt;/h2&gt;
+    &lt;a href="about.html"&gt;Zur About-Seite&lt;/a&gt;
+
+    &lt;h2&gt;Ankerlink&lt;/h2&gt;
+    &lt;a href="#section1"&gt;Springe zu Abschnitt 1&lt;/a&gt;
+
+    &lt;h2 id="section1"&gt;Abschnitt 1&lt;/h2&gt;
+    &lt;p&gt;Inhalt von Abschnitt 1.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+<button onclick="copyCode1()">Kopieren</button>
+</div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.2;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#links"><h2>Links</h2></a>
+            <a href="#target"><h2>Target-Attribute</h2></a>
+            <a href="#anker"><h2>Anker</h2></a>
+            <a href="#beispiel"><h2>Beispiel</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>
