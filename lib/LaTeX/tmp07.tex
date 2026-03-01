@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{titlesec}
+
+\definecolor{accent}{HTML}{0EA5E9}
+
+\titleformat{\section}
+  {\Large\bfseries}
+  {}
+  {0em}
+  {\color{accent}\rule{\linewidth}{1pt}\newline}
+
+\begin{document}
+
+{\Huge Modern Accent Layout}
+
+\vspace{1cm}
+
+\section*{Overview}
+\lipsum[1]
+
+\section*{Implementation}
+\lipsum[2]
+
+\end{document}

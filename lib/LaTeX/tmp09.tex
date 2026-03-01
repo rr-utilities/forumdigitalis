@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{xcolor}
+
+\definecolor{cardbg}{HTML}{F1F5F9}
+
+\begin{document}
+
+{\Huge Modular Layout}
+
+\vspace{1cm}
+
+\begin{tcolorbox}[colback=cardbg,colframe=black]
+\textbf{Module A}
+
+\lipsum[1]
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=cardbg,colframe=black]
+\textbf{Module B}
+
+\lipsum[2]
+\end{tcolorbox}
+
+\end{document}
