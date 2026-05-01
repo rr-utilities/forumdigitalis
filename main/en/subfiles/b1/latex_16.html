@@ -21,11 +21,11 @@
                 <a href="../../b1.html" class="tab active">Block 1</a>
                 <a href="../../b2.html" class="tab">Block 2</a>
                 <a href="../../b3.html" class="tab">Block 3</a>
-                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="../../b4.html" class="tab">Block 4</a>
                 <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
                 <div>
-                    <a href="" class="tab active">DE</a>
-                    <a href="../../../en/subfiles/b1/latex_16.html" class="tab">EN</a>
+                    <a href="../../../de/subfiles/b1/latex_16.html" class="tab">DE</a>
+                    <a href="" class="tab active">EN</a>
                 </div>        
             </div>
         </nav>
@@ -33,28 +33,28 @@
 </header>
 
 <h1>
-    1.6 Gleitumgebungen
+    1.7 Floating environment
 </h1>
 <h3>
-    In LaTeX sind Gleitumgebungen Elemente wie Abbildungen, Tabellen und Minipages, die automatisch an eine optimale Position im Dokument "gleiten", um das Layout sauber zu halten. Sie lasssen sich platzieren (h, t, b, p; d.h. here, top, bottom, page), beschriften (<code>\caption</code>) und nummerieren / labeln (<code>\label</code>), sodass sie im Abbildungs- bzw. Tabellenverzeichnis erscheinen.
+    In LaTeX, floating environments are elements such as figures, tables and minipages that automatically "float" to an optimal position in the document to keep the layout clean. They can be positioned (h, t, b, p; i.e. here, top, bottom, page), labelled (<code>\caption</code>) and numbered/labelled (<code>\label</code>) so that they appear in the list of figures or tables.
 </h3>
 
-<div id="abbildungen" style="padding-top:100px; margin-top: -100px;">
-    <h3><strong>Abbildungen</strong></h3>
+<div id="figures" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Figures</strong></h3>
 </div>
 <div class="code-box">
 <code id="exampleCode1">\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{example-image}
-	\caption{Beispielabbildung}
-	\label{fig:beispiel}
+	\caption{Example image}
+	\label{fig:example-image}
 \end{figure}</code>
-    <button onclick="copyCode1()">Kopieren</button>
+    <button onclick="copyCode1()">Copy</button>
 </div>
 <script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
 
-<div id="tabellen" style="padding-top:100px; margin-top: -100px;">
-    <h3><strong>Tabellen</strong></h3>
+<div id="tables" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Tables</strong></h3>
 </div>
 <div class="code-box">
 <code id="exampleCode2">\begin{table}[htbp]
@@ -66,10 +66,10 @@
 		1 & 2 \\
 		\hline
 	\end{tabular}
-	\caption{Beispieltabelle}
-	\label{tab:beispiel}
+	\caption{Example table}
+	\label{tab:example-table}
 \end{table}</code>
-    <button onclick="copyCode2()">Kopieren</button>
+    <button onclick="copyCode2()">Copy</button>
 </div>
 <script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
 
@@ -78,13 +78,13 @@
 </div>
 <div class="code-box">
 <code id="exampleCode3">\begin{minipage}[c]{0.45\textwidth}
-	Linker Textblock oder Bild
+	Left text block or image
 \end{minipage}
 \hfill
 \begin{minipage}[c]{0.45\textwidth}
-	Rechter Textblock oder Bild
+	Right text block or image
 \end{minipage}</code>
-    <button onclick="copyCode3()">Kopieren</button>
+    <button onclick="copyCode3()">Copy</button>
 </div>
 <script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
 	
@@ -96,8 +96,8 @@
 <div class="second-header-wrapper">
     <div class="second-header">
         <div class="horizontal-header">
-            <a href="#abbildungen"><h2>Abbildungen</h2></a>
-            <a href="#tabellen"><h2>Tabellen</h2></a>
+            <a href="#figures"><h2>Figures</h2></a>
+            <a href="#tables"><h2>Tables</h2></a>
             <a href="#minipages"><h2>Minipages</h2></a>
         </div>
     </div>

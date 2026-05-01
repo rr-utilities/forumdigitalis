@@ -320,14 +320,128 @@ main {
 
 
 
-/* Regal Raster */
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 2rem 20rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.subtitle {
+    color: gray; margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+
+.link-container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.link-container a {
+    font-size: 16px;
+    color: black;
+}
+
+.link-container a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.topbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 6px;
+}
+
+.date {
+    font-size: 12px;
+    color: gray;
+}
+
+
+
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));
+    gap:20px;
+    justify-items:start;
+    align-items:start;
+}
+
+.project{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:left;
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.project img{
+    width:100%;
+    aspect-ratio:1 / 1;
+    object-fit:cover;
+    display:block;
+}
+
+.project .content{
+    width:100%;
+    padding:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:left;
+}
+
+.project p{
+    margin:0;
+    text-align:left;
+    padding: 0;
+    color: grey
+}
+
+.project a{
+    margin:0;
+    text-align:left;
+    padding: 0;
+    color: rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+
 .template-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 25px;
 }
 
-/* Template Karte */
 .template-card {
     background: white;
     border-radius: 8px;

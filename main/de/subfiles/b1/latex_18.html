@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum digitalis</title>
+    <link rel="stylesheet" href="../../../styles.css">
+
+    <link rel="icon" href="../../../favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../../favicon/apple-icon.png">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-flex">
+        <h1>Forum digitalis</h1>
+        <nav class="navigation">
+            <div class="button-group">
+                <a href="../../b1.html" class="tab active">Block 1</a>
+                <a href="../../b2.html" class="tab">Block 2</a>
+                <a href="../../b3.html" class="tab">Block 3</a>
+                <a href="../../../index.html" class="tab">Block 4</a>
+                <a href="https://sites.google.com/view/r-ravinthrarasa/landing-page" class="contact-link">Kontakt</a> |
+                <div>
+                    <a href="" class="tab active">DE</a>
+                    <a href="../../../en/subfiles/b1/latex_18.html" class="tab">EN</a>
+                </div>        
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>
+    1.6 Chemie
+</h1>
+<div id="w-pakete" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Wichtige Pakete</strong></h3>
+    <h3>
+        Es gibt drei fundamentale Mathematik-Packages:
+        <ul>
+            <li><code>chemfig</code>: beliebige Strukturformeln von Molekülen</li>
+            <li><code>mhchem</code>: chemische Gleichungen und vor allem Stöchiometrie</li>
+        </ul>
+        Praktischerweise kann man auch gleich alle Packages in einem Befehl ausdrücken.
+    </h3>
+</div>
+
+<div class="code-box"><code id="exampleCode1">\usepackage{amsmath,amssymb,amstext}</code>
+<button onclick="copyCode1()">Kopieren</button></div>
+<script> function copyCode1() { const code = document.getElementById("exampleCode1").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="gleichungen" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Gleichungen</strong></h3>
+    <h3>
+        Jegliche chemische Gleichungen werden mit dem <code>\ce{}</code>-Befehl erstellt. Dabei werden bei Indizes und Hochstellungen auf die typischen LaTeX-Befehle verzichtet. Beispiel:
+    </h3>
+</div>
+
+<div class="code-box"><code id="exampleCode2">\ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}</code>
+<button onclick="copyCode2()">Kopieren</button></div>
+<script> function copyCode2() { const code = document.getElementById("exampleCode2").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div>
+    <h3>Zudem gibt es verschiedene Pfeilarten, die u.a. das Gleichgewicht oder die Reversibilität einer Reaktion anzeigen können. Beispiel:</h3>
+</div>
+
+<div class="code-box"><code id="exampleCode3">->    % Reaktion nach rechts
+<-    % Reaktion nach links
+<->   % Resonanzpfeil
+<-->   % Reaktion in beide Richtungen
+<=>   % Gleichgewichtspfeil
+<=>>    % Gleichgewicht auf der rechten Seite
+<<=>    % Gleichgewicht auf der linken Seite</code>
+<button onclick="copyCode3()">Kopieren</button></div>
+<script> function copyCode3() { const code = document.getElementById("exampleCode3").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div id="strukturformeln" style="padding-top:100px; margin-top: -100px;">
+    <h3><strong>Strukturformeln</strong></h3>
+    <h3>
+        Bei den Strukturformeln arbeitet man mit dem <code>\chemfig{}</code>-Befehl. Innerhalb der geschweiften Klammern wird die Strukturformel definiert. In den kurvigen Klammern werden die angehängten Atome / Moleküle notiert, während davor in eckigen Klammern die Bindungswinkel angegeben werden. Bei den Bindungswinkeln gibt es eine spezifische Einheit von 1 bis 8, was 45° bis 360° entspricht. Beispiel:
+    </h3>
+</div>
+<div class="code-box"><code id="exampleCode4"><strong>% Summenformeln</strong>
+\ce{C4H10}
+
+<strong>% Valenzstrichformeln</strong>
+\chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+
+% Bei dieser Variante steht der Name des Moleküls unter der Strukturformel.
+\chemname{{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}}{Butan}
+
+<strong>% Skelettformel</strong>
+\chemfig{-[1]-[-1]-[1]}
+
+<strong>% Gruppenformel</strong>
+\ce{CH3(CH)2CH3}</strong></code>
+<button onclick="copyCode4()">Kopieren</button></div>
+<script> function copyCode4() { const code = document.getElementById("exampleCode4").innerText; navigator.clipboard.writeText(code);}</script>
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex-grow: 0.4;"></div>
+</div>
+
+<div class="second-header-wrapper">
+    <div class="second-header">
+        <div class="horizontal-header">
+            <a href="#w-pakete"><h2>Wichtige Pakete</h2></a>
+            <a href="#gleichungen"><h2>Gleichungen</h2></a>
+            <a href="#strukturformeln"><h2>Strukturformeln</h2></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h4>&copy; 2025 <a href="https://sites.google.com/view/r-ravinthrarasa/projekte/coding-utilities" target="_blank" class="styled-link">Coding Utilities</a>, alle <a href="https://sites.google.com/view/r-ravinthrarasa/impressum" target="_blank" class="styled-link">Rechte</a> vorbehalten.</h4>
+</footer>
+
+</body>
+</html>
