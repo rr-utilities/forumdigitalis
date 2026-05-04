@@ -110,13 +110,23 @@ h3 {
     gap: 10px;
 }
 
-.tab {
+.tab, .default-link, .contact-link {
     background: #0055aa;
     color: white;
     padding: 8px 12px;
     border-radius: 4px;
     text-decoration: none;
     font-size: 14px;
+}
+
+.tab.active {
+    background: #ffaa00;
+    color: black;
+}
+
+.tab:hover, .default-link:hover, .contact-link:hover {
+    background: #0077cc;
+    color: white;
 }
 
 a {
