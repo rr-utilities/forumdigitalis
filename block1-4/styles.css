@@ -110,23 +110,13 @@ h3 {
     gap: 10px;
 }
 
-.tab, .default-link, .contact-link {
+.tab {
     background: #0055aa;
     color: white;
     padding: 8px 12px;
     border-radius: 4px;
     text-decoration: none;
     font-size: 14px;
-}
-
-.tab.active {
-    background: #ffaa00;
-    color: black;
-}
-
-.tab:hover, .default-link:hover, .contact-link:hover {
-    background: #0077cc;
-    color: white;
 }
 
 a {
@@ -321,16 +311,6 @@ main {
 
 
 
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    padding: 2rem 20rem;
-    text-align: left;
-    line-height: 1.5;
-}
 
 .subtitle {
     color: gray; margin-bottom: 20px;
@@ -380,57 +360,6 @@ input {
 }
 
 
-
-
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));
-    gap:20px;
-    justify-items:start;
-    align-items:start;
-}
-
-.project{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    text-align:left;
-    background:#fff;
-    border-radius:14px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-.project img{
-    width:100%;
-    aspect-ratio:1 / 1;
-    object-fit:cover;
-    display:block;
-}
-
-.project .content{
-    width:100%;
-    padding:12px;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    text-align:left;
-}
-
-.project p{
-    margin:0;
-    text-align:left;
-    padding: 0;
-    color: grey
-}
-
-.project a{
-    margin:0;
-    text-align:left;
-    padding: 0;
-    color: rgba(0, 123, 255, 0.5);
-}
 
 
 

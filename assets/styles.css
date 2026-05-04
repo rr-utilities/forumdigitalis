@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f8f8;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.header {
+    background: #003366;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tab, .default-link, .contact-link {
+    background: #0055aa;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tab.active {
+    background: #ffaa00;
+    color: black;
+}
+
+.tab:hover, .default-link:hover, .contact-link:hover {
+    background: #0077cc;
+    color: white;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 7px;
+}
+
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));
+    gap:20px;
+    justify-items:start;
+    align-items:start;
+}
+
+.project{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:left;
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.project img{
+    width:100%;
+    aspect-ratio:1 / 1;
+    object-fit:cover;
+    display:block;
+}
+
+.project .content{
+    width:100%;
+    padding:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:left;
+}
+
+.project p{
+    margin:0;
+    text-align:left;
+    padding: 0;
+    color: grey
+}
+
+.project a{
+    margin:0;
+    text-align:left;
+    padding: 0;
+    color: rgba(0, 123, 255, 0.5);
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 2rem 20rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+a.styled-link {
+    color: #000000;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.styled-link-v2 {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.styled-link-v3 {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.styled-link:hover, a.styled-link-v2:hover, a.styled-link-v3:hover {
+    text-decoration: none;
+}
